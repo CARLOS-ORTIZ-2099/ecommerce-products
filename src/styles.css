@@ -1,0 +1,14 @@
+/* img {
+    width: 350px;
+}
+
+.productos-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.productos-container div {
+    border: solid rgb(97, 86, 190) 2px;
+    padding: 1rem;
+} */

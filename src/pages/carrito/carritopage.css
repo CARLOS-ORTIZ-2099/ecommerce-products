@@ -1,0 +1,13 @@
+img{
+    width: 250px;
+}
+.carrito-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.carrito-container div {
+    border: solid green  2px;
+    padding: 1rem;
+}

@@ -1,0 +1,48 @@
+.productos-container{
+    background-color:aliceblue;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(275px, 1fr));
+    justify-content: center;
+    margin-top: 1rem;
+    color: black;
+    padding: 1rem;
+    gap: 2rem;
+    
+}
+.productos-container img{
+    width: 150px;
+}
+
+.producto{
+    border: solid cyan 1px;
+    text-align: center;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    
+}
+.producto div a{
+    display: block;
+    margin-top: 20px;
+    color: tomato;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.phather{
+    min-height: 100vh;
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+@media screen and (max-width:300px) {
+    .productos-container{
+        background-color:aliceblue;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+        justify-content: center;
+        margin-top: 1rem;
+        color: black;
+        padding: 1rem;
+        gap: 2rem;
+    }    
+}

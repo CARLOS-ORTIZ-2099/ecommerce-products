@@ -1,0 +1,46 @@
+.producto-principal{
+    background-color: rgb(75, 122, 163);
+    padding: 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+
+.textos{
+    border: solid red 2px;
+    padding: .5rem;
+    text-align: center;
+  /*   width: 50%; */
+   /*  flex: 1; */
+}
+
+.textos img{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+/* .parrafo{
+    border: solid orange 3px;
+    width: 30%;
+    margin: 0 auto;
+} */
+
+@media screen and (min-width:1000px) {
+    .parrafo{
+        border: solid orange 3px;
+        width: 30%;
+        margin: 0 auto;
+    } 
+    
+}
+
+.buttons{
+    border: solid blue 2px;
+    padding: 2rem;
+    /* flex: 1; */
+}
