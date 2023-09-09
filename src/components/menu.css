@@ -1,9 +1,9 @@
 .navbar{
     padding: 1.2rem;
-  /*   background-color: rgb(27, 97, 209); */
+    background-color: rgb(27, 97, 209);
    /*  color: aliceblue; */
-   overflow: hidden;
-   width: 100%;
+/*    overflow: hidden; */
+   width: 104%;
 }
 
 .navbar-nav{
@@ -11,4 +11,11 @@
     display: flex;
     justify-content: space-around;
     padding: 1rem;
+}
+
+@media screen and (max-width:300px) {
+    .navbar{
+       overflow: hidden;
+       width: 105%;
+    }
 }
