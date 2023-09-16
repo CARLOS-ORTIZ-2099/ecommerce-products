@@ -2,7 +2,7 @@ import { useNavigate, useParams } from "react-router"
 import { useEffect, useState } from "react"
 import { useContext } from "react"
 import { Contexto} from "../../context/Contexto"
-import './productoInfo.css'
+import './producto-info.css'
 
 export const ProductoInfo = () => {
 // capturando el parametro dinamico de cada producto

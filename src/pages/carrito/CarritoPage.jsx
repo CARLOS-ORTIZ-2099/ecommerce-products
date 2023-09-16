@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { Contexto } from "../../context/Contexto"
-import './carritopage.css'
+import './carrito-page.css'
 
 export const CarritoPage = () => {
   let {carrito, setCarrito}  = useContext(Contexto)
