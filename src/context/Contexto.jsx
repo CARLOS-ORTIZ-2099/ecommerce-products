@@ -1,29 +1,34 @@
 /* eslint-disable react/prop-types */
 import { createContext, useState } from "react"
 import { data } from "../helpers/data"
+console.log(data)
 
-export const Contexto = createContext()
+const ContextoProducts = createContext()
 
+const Contexto = ({children}) => {
+    
+    const [carrito, setCarrito] = useState(() => {
+      const guardarData = localStorage.getItem('data')
+      console.log(guardarData)
+      if(guardarData){
+        return JSON.parse(guardarData)
+      }else {
+        return []
+      }
+     
+  })
 
-// creando una funcion que retornara un wrapper, este wrapper cubrira toda mi aplicacion
-export const ContextoFuncion = ({children}) => {
+    let copyData = data.map(product => ({...product, quantity:0, total:0}))
 
-  // creando estado para los productos que se almacenaran en el carrito
-  const [carrito, setCarrito] = useState([])
-
-  // haciendo una copia del archivo json y asignandola a la variable copy del estado
-  const [copy, setCopy] = useState(data.map(element => ({ id: element.id, quantity: 0 ,price:element.price,total:0,name:element.name,image:element.image})))
-
-  const dataFile = {carrito,setCarrito, copy, setCopy}
+    
+    const dataProducts = {copyData, carrito, setCarrito}
 
   return (
-
-    // al proveedor le pasamos los dtaos que proveera, y estos son el estado y la funcion que cambia el estado del carrito, y de la copia del json
-
-    <Contexto.Provider value={dataFile}>
+    <ContextoProducts.Provider value={dataProducts}>
         {children}
-    </Contexto.Provider>
-
+    </ContextoProducts.Provider>
   )
 
 }
+
+export {ContextoProducts, Contexto}

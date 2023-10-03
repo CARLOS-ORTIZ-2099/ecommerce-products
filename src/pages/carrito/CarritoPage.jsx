@@ -1,70 +1,63 @@
-import { useContext } from "react"
-import { Contexto } from "../../context/Contexto"
-import './carrito-page.css'
+/* eslint-disable no-unused-vars */
+import { useContext, useEffect, useState } from "react"
+
+
+import { ContextoProducts } from "../../context/Contexto"
+import { alertConfirmation } from "../../helpers/alertConfirmation"
 
 export const CarritoPage = () => {
-  let {carrito, setCarrito}  = useContext(Contexto)
+    const {copyData, carrito, setCarrito} = useContext(ContextoProducts)
+    const [totalPay, setTotalPay] = useState(0)
+    console.log(carrito)
+ 
+useEffect(() => {
+    let total =  carrito.reduce((a, b) => a + b.total, 0)
+    console.log(total)
+    setTotalPay(total)
+    localStorage.setItem('data',JSON.stringify(carrito))
+}, [totalPay,carrito])
 
-console.log(carrito)
 
-// haciendo la sumatoria del carrito
-let totalPagar = carrito.reduce((elementoA, elementoP) => elementoA + elementoP.total,0) 
-console.log(totalPagar)
-
-// haciendo el filtro de productos eliminados del carrito
-const eliminar = (id) => {
-  let modificado = carrito.filter(elemento => elemento.id!== id)
-  setCarrito(modificado)
+const deleteProduct = (id) => {
+    console.log(id)
+    alertConfirmation(id,carrito,setCarrito)
 }
 
-
 const mas = (id) => {
- 
-    const result = carrito.map((element => {
-         if(element.id == id){
-             return {...element, 'quantity':element.quantity+1,'total':element.price*(element.quantity+1)}
-         }
-         else return element
- 
-     })) 
-     
-     setCarrito(result)
+    console.log(id)
+    let product = carrito.map(e => e.id== id 
+                    ?{...e,quantity:e.quantity+1,total:(e.quantity+1)*e.price}
+                    :e)
+    setCarrito(product)
 }
 
 const menos = (id) => {
-  const result = carrito.map((element => {
-       if(element.id == id && element.quantity >= 2){
-           return {...element, 'quantity':element.quantity-1,'total':element.price*(element.quantity-1)}
-       }
-       else return element
-
-   })) 
-   setCarrito(result)
+    let product = carrito.map(e => e.id== id && e.quantity > 1 
+                    ? {...e,quantity:e.quantity-1,total:(e.quantity-1)*e.price}
+                    :e)
+    setCarrito(product)
 }
 
-
   return (
-    <>
-      {totalPagar}
-      <div className="carrito-container">
-        
-        {
-          carrito.map(elemento => {
-            return <div key={elemento.id}>
-                  <h1>{elemento.name}</h1>
-                  <img src={elemento.image} alt="" />
-                  <h2>precio:  {elemento.price}</h2>
-                  <h2>cantidad:{elemento.quantity}</h2>
-                  <h1> <strong>{elemento.total}</strong></h1>
-                {  <button onClick={() => menos(elemento.id)}>menos</button>}
-              
-                  <button onClick={() => mas(elemento.id)}>mas</button><br/>
-                  <button onClick={()=> eliminar(elemento.id)}>eliminar</button>
+        <>
+              <h1>total a pagar : {totalPay}</h1>
+            <div style={{display:'flex', flexWrap:'wrap',gap:'2rem'}}>
+                {
+                    carrito.map(ele => (
+                        <div key={ele.id}>
+                            <h1>{ele.name}</h1>
+                            <img src={ele.image} alt="" style={{width:'200px'}}/> 
+                                <h1>cantidad: {ele.quantity}</h1>
+                                <h1>precio:  {ele.price}</h1>
+                                <h1> total: {ele.total}</h1>
+                            <button onClick={() => mas(ele.id)}>mas</button>
+                            <button onClick={() => menos(ele.id)}>menos</button>
+                            <br/>
+                            <button onClick={() => deleteProduct(ele.id)} >eliminar</button>
+                        </div>
+                    ))
+                }
             </div>
-          })
-        }
-          
-      </div>
-    </>
+        </>
   )
 }

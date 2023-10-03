@@ -24,11 +24,24 @@
     margin-top: 2rem;
 }
 
-/* .parrafo{
-    border: solid orange 3px;
-    width: 30%;
-    margin: 0 auto;
-} */
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.buttons{
+    border: solid blue 2px;
+    padding: 2rem;
+    /* flex: 1; */
+}
+
 
 @media screen and (min-width:1000px) {
     .parrafo{
@@ -39,8 +52,4 @@
     
 }
 
-.buttons{
-    border: solid blue 2px;
-    padding: 2rem;
-    /* flex: 1; */
-}
+

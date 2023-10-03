@@ -1,9 +1,9 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import './styles.css'
+import { Menu } from './components/Menu'
 import { Home } from './pages/home-page/Home'
 import { Sucursales } from './pages/sucursales-page/sucursales'
 import { Productos } from './pages/product-pages/Productos'
-import { Menu } from './components/Menu'
-import './styles.css'
 import { ProductoInfo } from './pages/product-pages/ProductoInfo'
 import { CarritoPage } from './pages/carrito/CarritoPage'
 
