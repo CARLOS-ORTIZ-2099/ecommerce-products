@@ -7,7 +7,7 @@ export const data = [
       "email": "Sincere@april.biz",
       "price":92,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298-1.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298-3.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298-4.jpg'}
@@ -24,7 +24,7 @@ export const data = [
       "email": "Shanna@melissa.tv",
       "price":50,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964-1.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964-3.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964-4.jpg'}
@@ -42,7 +42,7 @@ export const data = [
       "email": "Nathan@yesenia.net",
       "price":80,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878-1.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878-3.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878-4.jpg'}

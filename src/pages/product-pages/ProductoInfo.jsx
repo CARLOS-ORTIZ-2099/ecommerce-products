@@ -69,7 +69,7 @@ export const ProductoInfo = () => {
   return (
     <div className="products-info-template-container min-vh-100">         
                 <ProductsInfoTemplate 
-                    data ={{...product}} 
+                    product ={{...product}} 
                     funciones = {{more, less, addProduct}} 
                     number={number}  />
     </div>
