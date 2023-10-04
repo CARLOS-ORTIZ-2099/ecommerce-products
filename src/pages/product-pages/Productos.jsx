@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom"
 import { data } from "../../helpers/data"
+import '../../pages/../styles.css'
 import './productos.css'
+import { CardProducts } from "../../components/card-product/CardProducts"
 
 export const Productos = () => {
 
@@ -10,13 +11,10 @@ export const Productos = () => {
         <div className="productos-container">
             {
                 data.map(producto => {
-                    return <div className="producto" key={producto.id}>
-                              <h1>{producto.name}</h1>
-                                <div>
-                                <img src={producto.image} alt="" />
-                                  <Link to={`/productos/${producto.id}`}>ver mas</Link>
-                                </div>
-                            </div>
+                    return (
+                      <CardProducts key={producto.id} producto={producto}/>
+
+                    )
                 })
             }
         </div>

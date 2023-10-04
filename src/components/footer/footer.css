@@ -1,0 +1,29 @@
+/* aplicando estilos al footer */
+
+:root {
+    --primary-color : #F8F8FF;
+    --color-secondary: #007FFF;
+    --color-enlaces: #003262;
+    --color-buttons: #4c9ce6;
+
+}
+
+
+.footer{
+    background-color: var(--color-secondary);
+}
+
+.footer a{
+    color: var(--primary-color);
+}
+.footer a:hover{
+    color: var(--color-buttons);
+    transition: .5s;
+}
+
+
+
+
+
+
+
