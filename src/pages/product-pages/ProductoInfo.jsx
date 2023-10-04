@@ -1,9 +1,9 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-
 import { ProductsInfoTemplate } from "../../components/infoProducts/ProductsInfoTemplate"
 import { ContextoProducts } from "../../context/Contexto"
 import { alertProductAdd } from "../../helpers/alertProductAdd"
+import './producto-info.css'
 
 export const ProductoInfo = () => {
 
@@ -67,7 +67,7 @@ export const ProductoInfo = () => {
   }
 
   return (
-    <div>         
+    <div className="products-info-template-container min-vh-100">         
                 <ProductsInfoTemplate 
                     data ={{...product}} 
                     funciones = {{more, less, addProduct}} 

@@ -1,0 +1,78 @@
+:root {
+    --primary-color : #F8F8FF;
+    --alpha-primary-color:#F2F3F4;
+    --color-secondary: #007FFF;
+    --color-butons: #003262;
+    --color-buttons-hover: #4c9ce6;
+
+}
+
+.container-info{
+    border:  solid red 2px;
+    min-height: 100vh;
+    background-color:rgba(245, 245, 245, .7);
+   
+}
+
+.container-info .container{
+    min-height: 100vh;
+    border: solid green 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+
+.textos{
+    text-align: center;
+}
+
+.textos .img-principal{
+    width: 500px;
+    border-radius: 10px;
+}
+
+.textos .btn{
+    margin: 2rem;
+}
+
+.textos .more:hover{
+    background-color: rgb(35, 214, 35);
+}
+
+.textos .less:hover{
+    background-color: rgb(228, 57, 57);
+}
+
+
+.gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    /* border: solid red 2px; */
+    justify-content: center;
+
+}
+
+.gallery-container img {
+    width: 180px;
+    border-radius: 10px;
+}
+
+
+
+
+
+@media screen and (max-width:900px) {
+    .textos .img-principal{
+        width: 220px;
+        border-radius: 10px;
+    }
+    
+    .gallery-container img {
+        width: 120px;
+        border-radius: 10px;
+    }
+    
+}
