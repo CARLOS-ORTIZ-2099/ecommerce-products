@@ -1,5 +1,6 @@
-import './menu.css'
-import { Link } from 'react-router-dom'
+/* import './menu.css' */
+import { Link, NavLink } from 'react-router-dom'
+import '../styles.css'
 
 export const Menu = () => {
   return (
@@ -12,44 +13,66 @@ export const Menu = () => {
                 <Link to='/carrito'>carrito</Link>
             </nav> */}
 
-         
-         <nav className="navbar navbar-expand-lg bg-body-primary row justify-content-around">
-        
-                    <div className="container-fluid ">
-                        <Link className="navbar-brand " to='/'>Ecommerce</Link>
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <nav className="navbar bg-success fixed-top">
+                  <div className="container">
+
+                        <Link className="navbar-brand" href="#" to='/'>
+                              <img src="https://gestionpyme.com/wp-content/uploads/2015/09/shutterstock_227788621.jpg" alt="Logo"  className="d-inline-block align-text-top"/>
+                              OcCorp
+                        </Link>
+
+                        <button className="navbar-toggler" type="button"
+                          data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" 
+                          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                            
                           <span className="navbar-toggler-icon"></span>
+                          
                         </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-
-
-                
-                  <ul className="navbar-nav me-auto mb-2 mb-lg-0 col">
-
-                        <li className="nav-item">
-                          <Link className="nav-link active " aria-current="page" to='/productos'>Productos</Link>
-                        </li>
                     
-                        <li className="nav-item ">
-                       
-                          <Link className='nav-link ' to='/sucursales'>Sucursales</Link>
-                     
-                        </li>
+                        <div className="offcanvas  offcanvas-end" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 
-                        
-                        <li className="nav-item">
-                         <Link className='nav-link ' to='/carrito'>Carrito</Link>
-                        </li>
+                              <div className="offcanvas-header">
+                                  <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
+                                    OcCorp
+                                  </h5>
 
-                  </ul>
-               
-                </div>
-              </div>
-          </nav>
-       
+                                  <button  type="button" className="btn-close fs-3"
+                                  data-bs-dismiss="offcanvas" aria-label="Close">
+                                  </button>
 
+                              </div>
 
+                              <div className="offcanvas-body ">
 
+                                  <ul className="border text-center  navbar-nav justify-content-start flex-grow-1 pe-3 mt-5">
+                               
+                                      <li className="nav-item  mb-5">
+                                        <NavLink  className="fs-3 nav-link" 
+                                          aria-current="page"
+                                          to='/' 
+                                          >Home</NavLink>
+                                      </li>
+
+                                      <li className="nav-item mb-5">
+                                        <Link className="fs-3 nav-link" to='/productos'>productos</Link>
+                                      </li>
+
+                                      <li className="nav-item mb-5">
+                                        <Link className="fs-3 nav-link" to='/sucursales'>sucursales</Link>
+                                      </li>
+
+                                      <li className="nav-item mb-5">
+                                        <Link className="fs-3 nav-link" to='/carrito'>carrito</Link>
+                                      </li>
+                                    
+                                  </ul>
+                          
+                              </div>
+
+                        </div>
+                    
+                  </div>
+              </nav>
 
 
             

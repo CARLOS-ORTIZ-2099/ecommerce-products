@@ -6,6 +6,7 @@ import { Sucursales } from './pages/sucursales-page/sucursales'
 import { Productos } from './pages/product-pages/Productos'
 import { ProductoInfo } from './pages/product-pages/ProductoInfo'
 import { CarritoPage } from './pages/carrito/CarritoPage'
+import { Footer } from './components/Footer'
 
 function App() {
   
@@ -25,6 +26,7 @@ function App() {
               <Route path='/carrito' element={<CarritoPage/>}/>  
 
           </Routes>
+          <Footer/>
       </BrowserRouter>
   )
 }
