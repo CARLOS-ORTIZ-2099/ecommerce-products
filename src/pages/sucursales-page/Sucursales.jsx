@@ -2,6 +2,6 @@
 
 export const Sucursales = () => {
   return (
-    <div>sucursales</div>
+    <div className="min-vh-100">sucursales</div>
   )
 }

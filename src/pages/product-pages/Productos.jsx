@@ -11,15 +11,15 @@ export const Productos = () => {
             {
                 data.map(producto => {
                     return <div className="producto" key={producto.id}>
-                            <h1>{producto.name}</h1>
-                              <div>
-                              <img src={producto.image} alt="" />
-                                <Link to={`/productos/${producto.id}`}>ver mas</Link>
-                              </div>
-                          </div>
+                              <h1>{producto.name}</h1>
+                                <div>
+                                <img src={producto.image} alt="" />
+                                  <Link to={`/productos/${producto.id}`}>ver mas</Link>
+                                </div>
+                            </div>
                 })
             }
-      </div>
+        </div>
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-import { ProductsInfoTemplate } from "../../components/ProductsInfoTemplate"
+import { ProductsInfoTemplate } from "../../components/infoProducts/ProductsInfoTemplate"
 import { ContextoProducts } from "../../context/Contexto"
 import { alertProductAdd } from "../../helpers/alertProductAdd"
 

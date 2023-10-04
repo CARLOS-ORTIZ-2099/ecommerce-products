@@ -1,6 +1,6 @@
 
-import { CardsHome } from "../../components/CardsHome"
-import { Carrusel } from "../../components/Carrusel"
+
+import { Carrusel } from "../../components/carrusel/Carrusel"
 
 export const Home = () => {
   return (
@@ -9,7 +9,7 @@ export const Home = () => {
 
          <Carrusel/>
         
-         <CardsHome/>         
+              
 
       </div>
 

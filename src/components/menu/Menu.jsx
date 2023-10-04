@@ -1,6 +1,6 @@
 /* import './menu.css' */
 import { Link, NavLink } from 'react-router-dom'
-import '../styles.css'
+
 
 export const Menu = () => {
   return (

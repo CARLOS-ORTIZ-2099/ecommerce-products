@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react"
 
 import { ContextoProducts } from "../../context/Contexto"
 import { alertConfirmation } from "../../helpers/alertConfirmation"
+import { CarritoProducts } from "./CarritoProducts"
 
 export const CarritoPage = () => {
     const {copyData, carrito, setCarrito} = useContext(ContextoProducts)
@@ -39,25 +40,6 @@ const menos = (id) => {
 }
 
   return (
-        <>
-              <h1>total a pagar : {totalPay}</h1>
-            <div style={{display:'flex', flexWrap:'wrap',gap:'2rem'}}>
-                {
-                    carrito.map(ele => (
-                        <div key={ele.id}>
-                            <h1>{ele.name}</h1>
-                            <img src={ele.image} alt="" style={{width:'200px'}}/> 
-                                <h1>cantidad: {ele.quantity}</h1>
-                                <h1>precio:  {ele.price}</h1>
-                                <h1> total: {ele.total}</h1>
-                            <button onClick={() => mas(ele.id)}>mas</button>
-                            <button onClick={() => menos(ele.id)}>menos</button>
-                            <br/>
-                            <button onClick={() => deleteProduct(ele.id)} >eliminar</button>
-                        </div>
-                    ))
-                }
-            </div>
-        </>
+        <CarritoProducts totalPay = {totalPay} carrito= {carrito} funciones={{mas, menos, deleteProduct}}/>
   )
 }
