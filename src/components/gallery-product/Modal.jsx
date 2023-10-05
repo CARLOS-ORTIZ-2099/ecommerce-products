@@ -9,7 +9,7 @@ export const Modal = ({closeModal, imagenState, nextImage, previusImage, setIndi
 
   return (
     
-    <div  className='border border-5 border-primary modal-custom'>
+    <div  className='modal-custom'>
       
 
         <img className="img-fluid" src={`${imagenState.img}`} alt="" />
