@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import './modal.css'
 
-export const Modal = ({closeModal, imagenState, nextImage, previusImage, setIndice}) => {
+export const Modal = ({imagenState, nextImage, previusImage, setIndice}) => {
 
     const hiddenModal = () => {
         setIndice(null)

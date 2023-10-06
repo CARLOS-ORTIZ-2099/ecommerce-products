@@ -1,0 +1,92 @@
+/* // X-Small devices (portrait phones, less than 576px)
+    // No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    
+
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media  (min-width: 768px) {
+
+    
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
+
+
+
+.products-cart{
+    border: solid magenta 2px;
+    
+   
+}
+
+.products-cart .container{
+    border:  dashed red 2px;
+}
+
+.products-cart [class*='bi bi-dash'],[class*='bi bi-trash'], .d-inline{
+    cursor: pointer;
+    margin: 10px;
+}
+
+
+.products-cart [class*='bi bi']{
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:400px) {
+    .products-cart [class*='bi bi-dash'],[class*='bi bi-trash'], .d-inline{
+        cursor: pointer;
+        margin: 5px;
+       
+    }
+    .products-cart [class*='bi bi']{
+        font-size: small;
+    }
+    
+}
+
+
+@media screen and (min-width:1000px) {
+    .products-cart [class*='bi bi-dash'],[class*='bi bi-trash'], .d-inline{
+        cursor: pointer;
+        margin: 20px;
+        
+    }
+
+    .products-cart [class*='bi bi']{
+        font-size: x-large;
+    }
+    
+    .total-pay-container{
+       /*  border: solid blue 2px; */
+        position: relative;
+    }
+    
+    .child-fixed{
+       /*  text-align: center; */
+        padding: 1rem;
+       /*  border: solid peru 2px; */
+        position: fixed;
+        width: 30%;
+    }
+    
+    
+
+}
+
+
