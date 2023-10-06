@@ -40,6 +40,6 @@ const menos = (id) => {
 }
 
   return (
-        <CarritoProducts totalPay = {totalPay} carrito= {carrito} funciones={{mas, menos, deleteProduct}}/>
+        <CarritoProducts totalPay = {totalPay} funciones={{mas, menos, deleteProduct}}/>
   )
 }
