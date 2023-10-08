@@ -21,7 +21,7 @@ export const TemplateCarritoProduct = ({totalPay, funciones}) => {
 
   return (
 
-    <div className='container mt-5 pt-5 border border-5 border-success'>
+    <div className='container mt-5 pt-5 border border-4 '>
     <div className="pt-5 min-vh-100 row ">
 
             {/* seccion productos del carrito */}
