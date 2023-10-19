@@ -11,15 +11,13 @@ export const ProductoInfo = () => {
   const {carrito, setCarrito, copyData} = useContext(ContextoProducts)
   const [product, setProduct] = useState([])
   const [number, setNumber] = useState(0)
-
-
+console.log(copyData)
   useEffect(() => {
     let findProduct = copyData.find(ele => ele.id == id)
     console.log(findProduct)
     setProduct(findProduct)
     
   }, [id])
-
 
     useEffect(() => {
       localStorage.setItem('data',JSON.stringify(carrito))
@@ -45,24 +43,16 @@ export const ProductoInfo = () => {
     if(carrito.every(e => e.id !== id) && number > 0){
       setCarrito((previus) => [...previus, {...shoop,quantity:number,total:(shoop.price*number)} ] )
       alertProductAdd()
-     }
+    }
 
     else if(carrito.some(e => e.id == id) && number > 0 ){
-        let posicion = carrito.findIndex(e => e.id == id)
-        console.log(`posicion del elemento selecionado ${posicion}`)
-        let productObject = carrito.find(e => e.id == id)
-        console.log(productObject)
-        
-        let car = [productObject].map(e => {
-          return {...e, quantity:e.quantity+number, total:(e.quantity+number)*e.price}
-        })
-
-        console.log(...car)
-        let copy = [...carrito]
-        copy.splice(posicion,1,...car)
-        console.log(copy)
-        setCarrito(copy)     
-        alertProductAdd()
+      
+      let newCarr = carrito.map(product => product.id == id ? 
+          {...product, quantity:product.quantity+number, total:(product.quantity+number)*product.price } 
+          : product )
+  
+      setCarrito(newCarr)
+      alertProductAdd()
     }
   }
 

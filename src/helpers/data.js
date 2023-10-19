@@ -270,7 +270,7 @@ export const data = [
       "name": "CAMISETA FÚTBOL HOMBRE ADIDAS JUVENTUS",
       "category": "fitnes",
       "email": "Rey.Padberg@karina.biz",
-      "price":60,
+      "price":220,
       "gallery": [
         {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-4.jpg'},
@@ -279,5 +279,22 @@ export const data = [
 
       ],
     },
+
+    
+    {
+      "id": 17,
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-1.jpg',
+      "name": 'TELEVISOR XIAOMI TV A PRO LED UHD 4K 55" SMART TV',
+      "category": "tecnologia",
+      "email": "Rey.Padberg@karina.biz",
+      "price":350,
+      "gallery": [
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-4.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-6.jpg'}
+
+      ],
+    }
     
   ]

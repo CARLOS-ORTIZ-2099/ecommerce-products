@@ -16,11 +16,9 @@ const [dataProducts, setDataProducts] = useState(data)
       setDataProducts(data)
       return
     }
-
     let copyData = [...data]
     let filterProducts = copyData.filter(product => product.name.toLowerCase().includes(name.toLowerCase()))
     setDataProducts(filterProducts)
-
   }
 
   const select = (e) => {
@@ -30,11 +28,9 @@ const [dataProducts, setDataProducts] = useState(data)
       return
     }
     let copyData = [...data]
-    let filterProducts = copyData.filter(product => product.category.toLowerCase().includes(category.toLowerCase()))
+    let filterProducts = copyData.filter(product => product.category.toLowerCase() == category.toLowerCase())
     setDataProducts(filterProducts)
   } 
-
-
   // renderizado de cada producto en la grilla 
   return (
     <div className="phather">

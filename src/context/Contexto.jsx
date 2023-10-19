@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { createContext, useState } from "react"
 import { data } from "../helpers/data"
-console.log(data)
+
 
 const ContextoProducts = createContext()
 
@@ -18,7 +18,7 @@ const Contexto = ({children}) => {
      
   })
 
-    let copyData = data.map(product => ({...product, quantity:0, total:0}))
+    let copyData = data
 
     
     const dataProducts = {copyData, carrito, setCarrito}
