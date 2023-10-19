@@ -3,7 +3,7 @@ export const data = [
       "id": 1,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2065300885298/2065300885298_2.jpg',
       "name": "IPHONE 14 PRO",
-      "username": "Bret",
+      "category": "tecnologia",
       "email": "Sincere@april.biz",
       "price":92,
       "gallery": [
@@ -20,7 +20,7 @@ export const data = [
       "id": 2,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2026309274964/2026309274964_2.jpg',
       "name": "ZAPATILLAS NIKE PARA MUJER",
-      "username": "Antonette",
+      "category": "calzado",
       "email": "Shanna@melissa.tv",
       "price":50,
       "gallery": [
@@ -38,7 +38,7 @@ export const data = [
       "id": 3,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2004316322878/2004316322878_2.jpg',
       "name": "LAPTOP ASUS TUF GAMING",
-      "username": "Samantha",
+      "category": "tecnologia",
       "email": "Nathan@yesenia.net",
       "price":80,
       "gallery": [
@@ -56,7 +56,7 @@ export const data = [
       "id": 4,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2004320775554/2004320775554_2.jpg',
       "name": "LAPTOP LENOVO IDEAPAD",
-      "username": "Karianne",
+      "category": "tecnologia",
       "email": "Julianne.OConner@kory.org",
       "price":20,
       "gallery": [
@@ -74,7 +74,7 @@ export const data = [
       "id": 5,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011_2.jpg',
       "name": "POLERA SODA BLUES PARA MUJER IZELA",
-      "username": "Kamren",
+      "category": "textil",
       "email": "Lucio_Hettinger@annie.ca",
       "price":100,
       "gallery": [
@@ -92,7 +92,7 @@ export const data = [
       "id": 6,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2005305098132/2005305098132_2.jpg',
       "name": "POLERA LACOSTE PARA HOMBRE SH3229",
-      "username": "Leopoldo_Corkery",
+      "category": "textil",
       "email": "Karley_Dach@jasper.info",
       "price":150,
       "gallery": [
@@ -110,7 +110,7 @@ export const data = [
       "id": 7,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2012310414659/2012310414659_2.jpg',
       "name": "CARTERA STEVE MADDEN BGLIDE-S",
-      "username": "Elwyn.Skiles",
+      "category": "accesorios",
       "email": "Telly.Hoeger@billy.biz",
       "price":200,
       "gallery": [
@@ -128,7 +128,7 @@ export const data = [
       "id": 8,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2026315736135/2026315736135_2.jpg',
       "name": "ZAPATILLAS URBANAS ADIDAS PARA MUJER",
-      "username": "Maxime_Nienow",
+      "category": "calzado",
       "email": "Sherwood@rosamond.me",
       "price":30,
       "gallery": [
@@ -146,7 +146,7 @@ export const data = [
       "id": 9,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2026251599696/2026251599696_2.jpg',
       "name": "ZAPATOS PARA MUJER MARQUIS MIJA",
-      "username": "Delphine",
+      "category": "calzado",
       "email": "Chaim_McDermott@dana.io",
       "price":25,
       "gallery": [
@@ -164,7 +164,7 @@ export const data = [
       "id": 10,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287_2.jpg',
       "name": "POLERA MANGA LARGA 10D-0138 SPIDERMAN",
-      "username": "Moriah.Stanton",
+      "category": "textil",
       "email": "Rey.Padberg@karina.biz",
       "price":160,
       "gallery": [
@@ -182,7 +182,7 @@ export const data = [
       "id": 11,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2031304917440/2031304917440_2.jpg',
       "name": "PS5 GOW",
-      "username": "Moriah.Stanton",
+      "category": "videojuegos",
       "email": "Rey.Padberg@karina.biz",
       "price":500,
       "gallery": [
@@ -199,7 +199,7 @@ export const data = [
       "id": 12,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2031309828369/2031309828369_2.jpg',
       "name": "NINTENDO SWITCH",
-      "username": "Moriah.Stanton",
+      "category": "videojuegos",
       "email": "Rey.Padberg@karina.biz",
       "price":500,
       "gallery": [
@@ -217,7 +217,7 @@ export const data = [
       "id": 13,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365_2.jpg',
       "name": "RELOJ GUESS HOMBRE",
-      "username": "Moriah.Stanton",
+      "category": "accesorios",
       "email": "Rey.Padberg@karina.biz",
       "price":450,
       "gallery": [
@@ -234,7 +234,7 @@ export const data = [
       "id": 14,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160_2.jpg',
       "name": "BODY MANGA LARGA INDEX PARA MUJER",
-      "username": "Moriah.Stanton",
+      "category": "textil",
       "email": "Rey.Padberg@karina.biz",
       "price":60,
       "gallery": [
@@ -252,7 +252,7 @@ export const data = [
       "id": 15,
       'image':'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421_2.jpg',
       "name": "PELOTA DE FÚTBOL ADIDAS UCL",
-      "username": "Moriah.Stanton",
+      "category": "fitnes",
       "email": "Rey.Padberg@karina.biz",
       "price":90,
       "gallery": [
@@ -262,6 +262,22 @@ export const data = [
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-3.jpg'}
 
       ],
-    }
+    },
+
+    {
+      "id": 16,
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-1.jpg',
+      "name": "CAMISETA FÚTBOL HOMBRE ADIDAS JUVENTUS",
+      "category": "fitnes",
+      "email": "Rey.Padberg@karina.biz",
+      "price":60,
+      "gallery": [
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-4.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-5.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020286078812/2020286078812-1.jpg'}
+
+      ],
+    },
     
   ]
