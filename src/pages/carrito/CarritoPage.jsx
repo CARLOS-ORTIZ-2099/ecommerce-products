@@ -1,13 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react"
-
-
-import { ContextoProducts } from "../../context/Contexto"
 import { alertConfirmation } from "../../helpers/alertConfirmation"
 import { CarritoProducts } from "./CarritoProducts"
+import { ProductsContext } from "../../context/ProductsContext"
+
 
 export const CarritoPage = () => {
-    const {copyData, carrito, setCarrito} = useContext(ContextoProducts)
+    const {copyData, carrito, setCarrito} = useContext(ProductsContext)
     const [totalPay, setTotalPay] = useState(0)
     console.log(carrito)
  

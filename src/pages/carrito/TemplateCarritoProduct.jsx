@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { useContext, useEffect } from "react"
-import { ContextoProducts } from "../../context/Contexto"
+import { ProductsContext } from "../../context/ProductsContext"
 
 
 export const TemplateCarritoProduct = ({totalPay, funciones}) => {
     const {mas, menos, deleteProduct} = funciones
-    const {carrito ,setCarrito} = useContext(ContextoProducts)
+    const {carrito ,setCarrito} = useContext(ProductsContext)
     let iva = carrito.length*2
 
     const buy = () => {

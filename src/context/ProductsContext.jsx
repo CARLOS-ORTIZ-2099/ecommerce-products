@@ -3,9 +3,9 @@ import { createContext, useState } from "react"
 import { data } from "../helpers/data"
 
 
-const ContextoProducts = createContext()
+const ProductsContext = createContext()
 
-const Contexto = ({children}) => {
+const ProductsProvider = ({children}) => {
     
     const [carrito, setCarrito] = useState(() => {
       const guardarData = localStorage.getItem('data')
@@ -24,11 +24,11 @@ const Contexto = ({children}) => {
     const dataProducts = {copyData, carrito, setCarrito}
 
   return (
-    <ContextoProducts.Provider value={dataProducts}>
+    <ProductsContext.Provider value={dataProducts}>
         {children}
-    </ContextoProducts.Provider>
+    </ProductsContext.Provider>
   )
 
 }
 
-export {ContextoProducts, Contexto}
+export {ProductsContext, ProductsProvider}

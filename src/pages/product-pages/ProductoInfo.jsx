@@ -1,15 +1,15 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 /* import { ProductsInfoTemplate } from "../../components/infoProducts/ProductsInfoTemplate" */
-import { ContextoProducts } from "../../context/Contexto"
 import { alertProductAdd } from "../../helpers/alertProductAdd"
 import './producto-info.css'
 import { ProductsInfoTemplate } from "../../components/info-products/ProductsInfoTemplate"
+import { ProductsContext } from "../../context/ProductsContext"
 
 export const ProductoInfo = () => {
 
   const {id} = useParams()
-  const {carrito, setCarrito, copyData} = useContext(ContextoProducts)
+  const {carrito, setCarrito, copyData} = useContext(ProductsContext)
   const [product, setProduct] = useState([])
   const [number, setNumber] = useState(0)
 console.log(copyData)
