@@ -9,7 +9,7 @@ const ProductsProvider = ({children}) => {
     
     const [carrito, setCarrito] = useState(() => {
       const guardarData = localStorage.getItem('data')
-      console.log(guardarData)
+      //console.log(guardarData)
       if(guardarData){
         return JSON.parse(guardarData)
       }else {
