@@ -1,0 +1,21 @@
+.random-products-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
+    justify-content: center;
+    margin-top: 1rem;
+    color: black;
+    padding: 1rem;
+    /* gap: 1rem; */
+    margin: 2rem 0 2rem 0 ;
+}
+
+.random-product{
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.7);
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.random-product img{
+    width: 150px;
+}

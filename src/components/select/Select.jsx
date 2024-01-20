@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
 
 
-export const Select = ({select}) => {
+export const Select = ({select, refSelect}) => {
   return (
-    <select className="mt-4"  id="category" name="category" onChange={select}> 
+    <select ref={refSelect} className="mt-4"  id="category" name="category" onChange={select}> 
 
         <option value="ALL">ALL</option>
         <option value="tecnologia">tecnologia</option>

@@ -1,34 +1,21 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { Carrusel } from "../../components/carrusel/Carrusel"
 import { aleatorios } from "../../helpers/productosAlatorios"
-import { Link } from "react-router-dom"
+import { ProductsContext } from "../../context/ProductsContext"
+import { RandomProducts } from "../../components/randomProducts/RandomProducts"
+import { SectionCategories } from "../../components/sectionCategories/SectionCategories"
 
 
-const randomProducts = aleatorios()
-console.log(randomProducts);
 
 export const Home = () => {
   const [auxiliar, setAuxiliar] = useState([])
-  const [initialProducts, setInitialProducts] = useState(() => {
-      const data = localStorage.getItem('data')
-      console.log(data);
-      if(data){
-        return JSON.parse(data)
-      }
-      else{
-        return []
-      }
-  })
+  const {carrito} = useContext(ProductsContext)
+
 
   useEffect(() => {
-    if(initialProducts && initialProducts.length > 1){
-      setAuxiliar(initialProducts)
-    }
-    else {
-      console.log(randomProducts);
-      setAuxiliar(randomProducts)
-    }
-  }, [])
+    const randomProductsData = aleatorios();
+    setAuxiliar(carrito.length > 1 ? carrito : randomProductsData)
+  }, [carrito])
 
  
   return (
@@ -36,21 +23,9 @@ export const Home = () => {
       <div className="pt-5 border  border-primary min-vh-100">
 
          <Carrusel/>
-         <h2>{initialProducts.length > 1 ? 'seguir comprando' : 'ultimas tendencias'}</h2>
-          <section style={{display:'grid', gridTemplateColumns:'repeat(auto-fit, minmax(200px, 1fr))', gap:'1rem'}}>
-          {
-            auxiliar.map((product, index) => (
-              index < 5 ? <div key={product.id} className=" text-center  " >
-              <img  src={`${product.image}`} className="card-img-top img-fluid" alt={`${product.name}`}/>
-              <div className="">
-                  <h5 className="card-title">{product.name}</h5>
-                  <Link to={`/productos/${product.id}`} className="btn btn-primary">ver mas</Link>
-              </div>
-              </div> : ''
-            ))
-          }
-          </section>
-              
+         <SectionCategories/>
+         <h2 className="text-center text-capitalize text-primary mt-5">{carrito.length > 1 ? 'seguir comprando' : 'ultimas tendencias'}</h2>
+         <RandomProducts auxiliar={auxiliar}/>
       </div>
 
   )

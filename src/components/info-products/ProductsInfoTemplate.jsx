@@ -3,9 +3,9 @@ import { GalleryProduct } from '../gallery-product/GalleryProduct'
 import './products-info-template.css'
 
 export const ProductsInfoTemplate = ({product,funciones,number}) => {
-    console.log(product)
+/*     console.log(product)
     console.log(funciones)
-    console.log(number)
+    console.log(number) */
 
   return (
     <div className="container-info">

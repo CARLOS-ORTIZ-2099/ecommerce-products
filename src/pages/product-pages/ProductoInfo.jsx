@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-/* import { ProductsInfoTemplate } from "../../components/infoProducts/ProductsInfoTemplate" */
 import { alertProductAdd } from "../../helpers/alertProductAdd"
 import './producto-info.css'
 import { ProductsInfoTemplate } from "../../components/info-products/ProductsInfoTemplate"
@@ -12,22 +11,20 @@ export const ProductoInfo = () => {
   const {carrito, setCarrito, copyData} = useContext(ProductsContext)
   const [product, setProduct] = useState([])
   const [number, setNumber] = useState(0)
-console.log(copyData)
+  //console.log(copyData)
   useEffect(() => {
     let findProduct = copyData.find(ele => ele.id == id)
-    console.log(findProduct)
+   // console.log(findProduct)
     setProduct(findProduct)
     
   }, [id])
 
-    useEffect(() => {
+  useEffect(() => {
       localStorage.setItem('data',JSON.stringify(carrito))
-    }, [carrito])
+  }, [carrito])
 
 
-  const more = () => {
-      setNumber((previus) => previus + 1 )
-  }
+  const more = () => setNumber((previus) => previus + 1 )
 
   const less = () => {
     setNumber((previus) => previus - 1 )
@@ -37,9 +34,9 @@ console.log(copyData)
   }
 
   const addProduct = (id) => {
-    console.log(id)
+   // console.log(id)
     let [shoop] = copyData.filter(ele => ele.id == id)
-    console.log(shoop)
+   // console.log(shoop)
 
     if(carrito.every(e => e.id !== id) && number > 0){
       setCarrito((previus) => [...previus, {...shoop,quantity:number,total:(shoop.price*number)} ] )
@@ -47,7 +44,6 @@ console.log(copyData)
     }
 
     else if(carrito.some(e => e.id == id) && number > 0 ){
-      
       let newCarr = carrito.map(product => product.id == id ? 
           {...product, quantity:product.quantity+number, total:(product.quantity+number)*product.price } 
           : product )

@@ -4,19 +4,11 @@ import './menu.css'
 export const Menu = () => {
   return (
     <>
-      
-           {/*  <nav>
-                <Link to='/'>home</Link>
-                <Link to='/productos'>productos</Link>
-                <Link to='/sucursales'>sucursales</Link>
-                <Link to='/carrito'>carrito</Link>
-            </nav> */}
-
               <nav className="navbar bg-success fixed-top">
                   <div className="container">
 
-                        <Link className="navbar-brand" href="#" to='/'>
-                              <img src="https://gestionpyme.com/wp-content/uploads/2015/09/shutterstock_227788621.jpg" alt="Logo"  className="d-inline-block align-text-top"/>
+                        <Link className="navbar-brand fw-bold" href="#" to='/'>
+                              <img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png" alt="Logo"  className="d-inline-block align-text-top"/>
                               OcCorp
                         </Link>
 
@@ -54,10 +46,6 @@ export const Menu = () => {
 
                                       <li className="nav-item mb-5">
                                         <Link className="fs-3 nav-link" to='/productos'>productos</Link>
-                                      </li>
-
-                                      <li className="nav-item mb-5">
-                                        <Link className="fs-3 nav-link" to='/sucursales'>sucursales</Link>
                                       </li>
 
                                       <li className="nav-item mb-5">

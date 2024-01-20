@@ -8,23 +8,23 @@ import { ProductsContext } from "../../context/ProductsContext"
 export const CarritoPage = () => {
     const {copyData, carrito, setCarrito} = useContext(ProductsContext)
     const [totalPay, setTotalPay] = useState(0)
-    console.log(carrito)
+   // console.log(carrito)
  
 useEffect(() => {
     let total =  carrito.reduce((a, b) => a + b.total, 0)
-    console.log(total)
+    //console.log(total)
     setTotalPay(total)
     localStorage.setItem('data',JSON.stringify(carrito))
 }, [totalPay,carrito])
 
 
 const deleteProduct = (id) => {
-    console.log(id)
+   // console.log(id)
     alertConfirmation(id,carrito,setCarrito)
 }
 
 const mas = (id) => {
-    console.log(id)
+    //console.log(id)
     let product = carrito.map(e => e.id== id 
                     ?{...e,quantity:e.quantity+1,total:(e.quantity+1)*e.price}
                     :e)

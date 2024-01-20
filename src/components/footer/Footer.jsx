@@ -6,7 +6,7 @@ export const Footer = () => {
     <footer className="footer p-3">
 
     <div className="container text-center">
-     <nav className="d-flex border justify-content-evenly">
+     <nav className="d-flex  justify-content-evenly">
          <Link href="https://facebook.com" ><i className="bi bi-facebook fs-3"></i></Link>
          <Link href="https://twitter.com" ><i className="bi bi-twitter fs-3"></i></Link>
          <Link href="https://github.com" ><i className="bi bi-github fs-3"></i></Link>
