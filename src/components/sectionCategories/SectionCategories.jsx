@@ -29,11 +29,11 @@ export const SectionCategories = () => {
             </div>
             <div>
                 <img src={textil} className='img-fluid' alt="" />
-                <p>videojuegos</p> 
+                <p>textil</p> 
             </div>
             <div>
                 <img src={fitness} className='img-fluid' alt="" />
-                <p>videojuegos</p> 
+                <p>deportes</p> 
             </div>
         </section>
    </>
