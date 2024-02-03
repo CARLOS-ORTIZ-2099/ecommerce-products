@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import './carrito-products.css'
 import { useContext, useEffect } from "react"
 import { ProductsContext } from "../../context/ProductsContext"
 

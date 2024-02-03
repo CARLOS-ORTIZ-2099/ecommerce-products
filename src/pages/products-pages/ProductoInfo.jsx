@@ -60,3 +60,9 @@ export const ProductoInfo = () => {
     </div>
   )
 }
+/* el callback como parametro de una funcion que cambia el estado me garantiza de que siempre este trabajando con el estado mas actualizado, sobre todo ya que react puede hacer operaciones que tarden un tiempo en ejecutarse
+
+React puede realizar actualizaciones de estado de manera asíncrona, y en algunos casos, podría haber operaciones que tarden un tiempo en ejecutarse
+
+por eso aqui       setCarrito((previus) => [...previus, {...shoop,quantity:number,total:(shoop.price*number)} ] )
+      alertProductAdd() la variable previus que toma el callback como parametro adopta el valor del estado antes de la actualizacion el estado mas reciente y luego retorno un arreglo con la copia del estado antes de la actualizacion y a ese arreglo le añado un nuevo elemento es asi o me equivoco? */
