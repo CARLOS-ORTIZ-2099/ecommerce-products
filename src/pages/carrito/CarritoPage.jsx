@@ -3,10 +3,12 @@ import { useContext, useEffect, useState } from "react"
 import { alertConfirmation } from "../../helpers/alertConfirmation"
 import { CarritoProducts } from "./CarritoProducts"
 import { ProductsContext } from "../../context/ProductsContext"
+import { CarritoVacio } from "./CarritoVacio"
+import { TemplateCarritoProduct } from "./TemplateCarritoProduct"
 
 
 export const CarritoPage = () => {
-    const {copyData, carrito, setCarrito} = useContext(ProductsContext)
+    const { carrito, setCarrito } = useContext(ProductsContext)
     const [totalPay, setTotalPay] = useState(0)
    // console.log(carrito)
  
@@ -26,19 +28,24 @@ const deleteProduct = (id) => {
 const mas = (id) => {
     //console.log(id)
     let product = carrito.map(e => e.id== id 
-                    ?{...e,quantity:e.quantity+1,total:(e.quantity+1)*e.price}
-                    :e)
+                ?{...e,quantity:e.quantity+1,total:(e.quantity+1)*e.price}
+                :e)
     setCarrito(product)
 }
 
 const menos = (id) => {
     let product = carrito.map(e => e.id== id && e.quantity > 1 
-                    ? {...e,quantity:e.quantity-1,total:(e.quantity-1)*e.price}
-                    :e)
+                ? {...e,quantity:e.quantity-1,total:(e.quantity-1)*e.price}
+                :e)
     setCarrito(product)
 }
 
   return (
-        <CarritoProducts totalPay = {totalPay} funciones={{mas, menos, deleteProduct}}/>
+     <>
+        {   
+            totalPay <=0 ? <CarritoVacio/> 
+                : <TemplateCarritoProduct funciones={{mas, menos, deleteProduct}} totalPay={totalPay}/>     
+        }
+    </>
   )
 }
