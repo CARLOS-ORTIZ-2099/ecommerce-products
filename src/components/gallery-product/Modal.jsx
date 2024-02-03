@@ -1,12 +1,7 @@
 /* eslint-disable react/prop-types */
 import './modal.css'
 
-export const Modal = ({imagenState, nextImage, previusImage, setIndice}) => {
-
-    const hiddenModal = () => {
-        setIndice(null)
-    }
-
+export const Modal = ({imagenState, nextImage, previusImage, closeModal }) => {
   return (
     
     <div  className='modal-custom'>
@@ -17,7 +12,7 @@ export const Modal = ({imagenState, nextImage, previusImage, setIndice}) => {
             <i className='previus bi bi-arrow-left-circle-fill fs-1' onClick={previusImage}></i>
             <i className='next bi bi-arrow-right-circle-fill fs-1' onClick={nextImage}></i>
         </div>
-        <i className='close bi bi-x-circle-fill fs-1' onClick={hiddenModal}></i>
+        <i className='close bi bi-x-circle-fill fs-1' onClick={closeModal}></i>
        
     </div>
 

@@ -1,7 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useContext, useEffect, useState } from "react"
 import { alertConfirmation } from "../../helpers/alertConfirmation"
-import { CarritoProducts } from "./CarritoProducts"
 import { ProductsContext } from "../../context/ProductsContext"
 import { CarritoVacio } from "./CarritoVacio"
 import { TemplateCarritoProduct } from "./TemplateCarritoProduct"

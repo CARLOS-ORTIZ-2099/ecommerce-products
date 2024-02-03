@@ -78,10 +78,10 @@ export const data = [
       "email": "Lucio_Hettinger@annie.ca",
       "price":100,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011_2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011_2.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011_2.jpg'}
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2015295219011/2015295219011-1.jpg'},
 
       ],
     },
@@ -162,16 +162,16 @@ export const data = [
 
     {
       "id": 10,
-      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287_2.jpg',
-      "name": "POLERA MANGA LARGA 10D-0138 SPIDERMAN",
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2016311857606/2016311857606_2.jpg',
+      "name": "POLERA UNFINISHED DRAWS 2 NBA PARA HOMBRE",
       "category": "textil",
       "email": "Rey.Padberg@karina.biz",
       "price":160,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287-1.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287-2.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287-2.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2092316671287/2092316671287-2.jpg'}
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2016311857606/2016311857606-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2016311857606/2016311857606-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2016311857606/2016311857606-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2016311857606/2016311857606-4.jpg'}
 
       ],
     },
@@ -215,16 +215,16 @@ export const data = [
 
     {
       "id": 13,
-      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365_2.jpg',
-      "name": "RELOJ GUESS HOMBRE",
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2012315351225/2012315351225_2.jpg',
+      "name": "RMOCHILA MUMYX II MARQUIS",
       "category": "accesorios",
       "email": "Rey.Padberg@karina.biz",
       "price":450,
       "gallery": [
-        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365-1.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365-2.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365-2.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012278938365/2012278938365-2.jpg'}
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2012315351225/2012315351225-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012315351225/2012315351225-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012315351225/2012315351225-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012315351225/2012315351225_2.jpg'}
 
       ],
     },
@@ -239,10 +239,9 @@ export const data = [
       "price":60,
       "gallery": [
         {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160-3.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160-2.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160-3.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2015265501160/2015265501160-3.jpg'}
-
       ],
     },
 
@@ -256,11 +255,10 @@ export const data = [
       "email": "Rey.Padberg@karina.biz",
       "price":90,
       "gallery": [
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-3.jpg'},
         {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-1.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-1.jpg'},
-        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-3.jpg'},
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2020306606421/2020306606421-3.jpg'}
-
       ],
     },
 
@@ -295,6 +293,73 @@ export const data = [
         {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2018315179784/2018315179784-6.jpg'}
 
       ],
-    }
+    },
+
+    {
+      "id": 18,
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2012312099823/2012312099823_2.jpg',
+      "name": 'CARTERA STEVE MADDEN BEMPIRE-M SMH2255',
+      "category": "accesorios",
+      "email": "Rey.Padberg@karina.biz",
+      "price":350,
+      "gallery": [
+        {'img':'https://home.ripley.com.pe/Attachment/WOP_5/2012312099823/2012312099823-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012312099823/2012312099823-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012312099823/2012312099823-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2012312099823/2012312099823-4.jpg'}
+
+      ],
+    },
+
+
+    
+    {
+      "id": 19,
+      'image':'https://home.ripley.com.pe/Attachment/WOP_3/2026184255133/2026184255133_2.jpg',
+      "name": "ZAPATILLAS VANS PARA MUJER AUTHE",
+      "category": "calzado",
+      "email": "Shanna@melissa.tv",
+      "price":120,
+      "gallery": [
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_3/2026184255133/2026184255133-1.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_3/2026184255133/2026184255133-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_3/2026184255133/2026184255133-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_3/2026184255133/2026184255133-4.jpg'}
+
+      ],
+
+    },
+    {
+      "id": 20,
+      'image':'https://home.ripley.com.pe/Attachment/WOP_5/2031319622346/2031319622346-1.jpg',
+      "name": "ROG ALLY Z1 EXTREME AMD RYZEN Z1 EXTREME 512GBSSD 16GB RAM 7",
+      "category": "videojuegos",
+      "email": "Shanna@melissa.tv",
+      "price":2999,
+      "gallery": [
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2031319622346/2031319622346-2.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2031319622346/2031319622346-3.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2031319622346/2031319622346-4.jpg'},
+        {'img': 'https://home.ripley.com.pe/Attachment/WOP_5/2031319622346/2031319622346-5.jpg'}
+
+      ],
+
+    },
+
+    {
+      "id": 21,
+      'image':'https://ripleype.imgix.net/https%3A%2F%2Fmedia-prod-use-1.mirakl.net%2FSOURCE%2F033e78eff3bc4e6cb27cf373f7ead568?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=4ec63abc143db5b1eca6ca982f833805',
+      "name": "MÁQUINA DE CORRER TROTADORA ELÉCTRICA MOTOR 2 HP SPORT",      "category": "fitnes",
+      "email": "Shanna@melissa.tv",
+      "price":3190,
+      "gallery": [
+        {'img': 'https://ripleype.imgix.net/https%3A%2F%2Fmedia-prod-use-1.mirakl.net%2FSOURCE%2F65bfd38adc1f46aba4035f968ee6cc33?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=40f910ef2d52648dc0ad80844ac87739'},
+        {'img': 'https://ripleype.imgix.net/https%3A%2F%2Fmedia-prod-use-1.mirakl.net%2FSOURCE%2Fc7720e0c5613401a9d1c72f10ced36c9?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=7d3df8344b44a33ebf540b06f5d6e6ef'},
+        {'img': 'https://ripleype.imgix.net/https%3A%2F%2Fmedia-prod-use-1.mirakl.net%2FSOURCE%2Fbada6fa65f7442e2afd8feb0fb2c3ea5?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=0277776ab63a088d8011de2d4b23847b'},
+        {'img': 'https://ripleype.imgix.net/https%3A%2F%2Fmedia-prod-use-1.mirakl.net%2FSOURCE%2F033e78eff3bc4e6cb27cf373f7ead568?w=750&h=555&ch=Width&auto=format&cs=strip&bg=FFFFFF&q=60&trimcolor=FFFFFF&trim=color&fit=fillmax&ixlib=js-1.1.0&s=4ec63abc143db5b1eca6ca982f833805'}
+
+      ],
+
+    },
     
   ]

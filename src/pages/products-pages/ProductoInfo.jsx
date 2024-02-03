@@ -53,10 +53,10 @@ export const ProductoInfo = () => {
 
   return (
     <div className="products-info-template-container min-vh-100">         
-                <ProductsInfoTemplate 
-                    product ={product} 
-                    funciones = {{more, less, addProduct}} 
-                    number={number}  />
+        <ProductsInfoTemplate 
+          product ={product} 
+          funciones = {{more, less, addProduct}} 
+          number={number}  />
     </div>
   )
 }
