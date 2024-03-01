@@ -9,7 +9,7 @@ export const Menu = () => {
 
                         <Link className="navbar-brand fw-bold" href="#" to='/'>
                               <img src="https://cdn0.iconfinder.com/data/icons/most-usable-logos/120/Amazon-512.png" alt="Logo"  className="d-inline-block align-text-top"/>
-                              OcCorp
+                              AmaStore
                         </Link>
 
                         <button className="navbar-toggler" type="button"
