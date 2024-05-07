@@ -36,7 +36,7 @@ export const ProductoInfo = () => {
    // console.log(id)
     if(carrito.every(product => product.id !== id) && number > 0){
       let shoop = copyData.find(product => product.id == id)
-      console.log(shoop)
+      //console.log(shoop)
       setCarrito((previus) => [...previus, {...shoop,quantity:number,total:(shoop.price*number)} ] )
       alertProductAdd()
     }

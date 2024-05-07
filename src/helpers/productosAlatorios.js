@@ -1,8 +1,10 @@
 import { data } from "./data"
+
+console.log(data);
 export function aleatorios(){
     const arreglo = []
-    while(arreglo.length <= 4){
-      let random =  Math.floor(Math.random()*17)
+    while(arreglo.length <= 3){
+      let random =  Math.floor(Math.random()*data.length)
       if(!arreglo.includes(random)){
         arreglo.push(random)
       }

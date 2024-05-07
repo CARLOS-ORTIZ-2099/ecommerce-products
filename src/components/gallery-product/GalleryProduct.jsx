@@ -4,7 +4,7 @@ import './gallery-product.css'
 import { Modal } from './Modal'
 
 export const GalleryProduct = ({product}) => {
-    console.log(product)
+    //console.log(product)
     const [imagenState, setImagenState] = useState([])
     const [indice, setIndice] = useState(null)
 
@@ -32,7 +32,7 @@ const nextImage = () => {
     }
   // siempre y cuando sum sea menor que la cantidad de imagenes en la galeria ejecutara algo
     let result = product.gallery.find((ele, index) => index == sum)
-    console.log(result)
+    //console.log(result)
     setImagenState(result)
     setIndice(sum)
 
@@ -52,7 +52,7 @@ const previusImage = () => {
     }
   // siempre y cuando less sea mayor que 0 ejecutara algo
     let result = product.gallery.find((ele, index) => index == less)
-    console.log(result)
+    //console.log(result)
     setImagenState(result)
     setIndice(less)
  
@@ -81,40 +81,3 @@ const previusImage = () => {
   )
 }
                        
-/* import React, { useState } from 'react';
-import './gallery-product.css';
-
-export const GalleryProduct = ({ product }) => {
-  const [valor, setValor] = useState(null);
-
-  const showModal = (imagen, indice) => {
-    setValor(indice);
-  };
-
-  const closeImage = () => {
-    setValor(null); // Esto cierra la imagen al hacer clic en ella nuevamente
-  };
-
-  return (
-    <>
-      <div className="gallery-container">
-        {product?.gallery?.map((imagen, index) => (
-          <div key={index}>
-            <img
-              onClick={() => showModal(imagen, index)}
-              className="img-modal"
-              src={`${imagen.img}`}
-              alt=""
-            />
-          </div>
-        ))}
-      </div>
-
-      {valor !== null && (
-        <div className="lightbox" onClick={closeImage}>
-          <img src={`${product?.gallery?.[valor]?.img}`} alt="" />
-        </div>
-      )}
-    </>
-  );
-}; */

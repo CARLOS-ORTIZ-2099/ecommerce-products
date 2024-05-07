@@ -9,7 +9,7 @@ import './section-categories.css'
 export const SectionCategories = () => {
   return (
    <>
-    <h2 className='title-categories'>miles de categorias te esperan</h2>
+    <h2 className='title-categories text-capitalize mt-3 text-primary'>miles de categorias te esperan</h2>
         <section className='categories-container'>
             <div>
                 <img src={shoes}className='img-fluid' alt="" />
